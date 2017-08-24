@@ -13,9 +13,9 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
+[image1-1]: ./writeup_images/training_examples.png "Visualization (training set)"
+[image1-2]: ./writeup_images/validation_examples.png "Visualization (validation set)"
+[image1-3]: ./writeup_images/testing_examples.png "Visualization (testing set)"
 [image4]: ./traffic-signs-imgs-test/1.jpg "Speed Limit (30Km/h)"
 [image5]: ./traffic-signs-imgs-test/11.jpg "Right-of-way at the next intersection"
 [image6]: ./traffic-signs-imgs-test/12.jpg "Priority road"
@@ -46,7 +46,7 @@ I used the numpy methods to calculate summary statistics of the traffic signs da
 Here is an exploratory visualization of the data set. It is bar charts showing how the data set is consisted.
 These bar charts shows how many data are for each traffic sign.
 
-![alt text][image1]
+![][image1-1] ![][image1-2] ![][image1-3]
 
 ### Design and Test a Model Architecture
 
