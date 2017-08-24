@@ -16,14 +16,14 @@ The goals / steps of this project are the following:
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./traffic-signs-imgs-test/1.png "Traffic Sign 1"
-[image5]: ./traffic-signs-imgs-test/11.png "Traffic Sign 2"
-[image6]: ./traffic-signs-imgs-test/12.png "Traffic Sign 3"
-[image7]: ./traffic-signs-imgs-test/14.png "Traffic Sign 4"
-[image8]: ./traffic-signs-imgs-test/23.png "Traffic Sign 5"
+[image4]: ./traffic-signs-imgs-test/1.jpg "Speed Limit (30Km/h)"
+[image5]: ./traffic-signs-imgs-test/11.jpg "Right-of-way at the next intersection"
+[image6]: ./traffic-signs-imgs-test/12.jpg "Priority road"
+[image7]: ./traffic-signs-imgs-test/14.jpg "Stop"
+[image8]: ./traffic-signs-imgs-test/23.jpg "Slippery road"
 
 ## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
+### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
 ### Writeup / README
@@ -119,8 +119,8 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![Speed Limit (30Km/h)][image4] ![Right-of-way at the next intersection][image5] ![Priority road][image6] 
+![Stop][image7] ![Slippery road][image8]
 
 The first image might be difficult to classify because ...
 
