@@ -62,25 +62,27 @@ Difference between two equation is whether it is zero-centered or not. I don't k
 
 At the grayscaling step, I convert data to grayscale but it does not helpful to increase accuracy. On the contrary, the accuracy goes down. After some trial for applying grayscale, I decide to exclude it in my project.
 
-####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
-
 Since I take the start point to LeNet-5, entire model is similar to it. My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
 | Convolution 3x3     	| 1x1 stride, valid padding, outputs 28x28x6 	|
-| RELU					| Activation												|
+| RELU					| 												|
 | Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
 | Convolution 3x3	    | 1x1 stride, valid padding, outputs 10x10x16 |
-| RELU					| Activation				|
+| RELU					|                 				|
 | Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
 | Flatten          | outputs 400   |
-| Fully connected		| Flatten, outputs 120    |
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
+| Fully connected		| outputs 120    |
+| RELU          |                         |
+| Dropout       | keep_prop 0.6           |
+| Fully connected		| outputs 84     |
+| RELU          |                         |
+| Dropout       | keep_prop 0.9           |
+| Fully connected		| outputs 43     |
+| Softmax				|       									|
+|	AdamOptimiser	|												|
 
 
 ####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
@@ -108,8 +110,6 @@ If a well known architecture was chosen:
  
 
 ###Test a Model on New Images
-
-####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
 
