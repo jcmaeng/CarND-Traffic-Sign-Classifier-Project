@@ -16,6 +16,7 @@ The goals / steps of this project are the following:
 [image1-1]: ./writeup_images/training_examples.png "Visualization (training set)"
 [image1-2]: ./writeup_images/validation_examples.png "Visualization (validation set)"
 [image1-3]: ./writeup_images/testing_examples.png "Visualization (testing set)"
+[image2]: ./writeup_images/valid_accuracy.png "Validation Set Accuracy"
 [image4]: ./traffic-signs-imgs-test/1.jpg "Speed Limit (30Km/h)"
 [image5]: ./traffic-signs-imgs-test/11.jpg "Right-of-way at the next intersection"
 [image6]: ./traffic-signs-imgs-test/12.jpg "Priority road"
@@ -82,20 +83,24 @@ Since I take the start point to LeNet-5, entire model is similar to it. My final
 | Dropout       | keep_prop 0.9           |
 | Fully connected		| outputs 43     |
 | Softmax				|       									|
-|	AdamOptimiser	|												|
 
+To train the model, I used AdamOptimiser with learning rate, batch size and number of epochs as follows.
 
-####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+- learning rate: 0.0001~0.1, finally 0.001
+- batch size: 32~512, finally 128
+- epochs: 10~100, finally 100
 
-To train the model, I used an ....
+I run the model with some range of parameter values then fix values with final one to achieve the accuracy goal.
+Finally, I use evaluate() function which is the same function in LeNet-5 solution. I think that it is good enough to my model since my model is from LeNet-5.
 
-####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+As I mentioned previously, I try to run the model with various parameter values and then take the values for highest accuracy.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* validation set accuracy: ~0.954 (refers the following graph)
+![][image2]
+* test set accuracy of: 0.939
 
+======
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
 * What were some problems with the initial architecture?
