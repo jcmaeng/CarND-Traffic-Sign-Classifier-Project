@@ -107,7 +107,8 @@ Here are five German traffic signs that I found on the web:
 ![Speed Limit (30Km/h)][image4] ![Right-of-way at the next intersection][image5] ![Priority road][image6] 
 ![Stop][image7] ![Slippery road][image8]
 
-The first image might be difficult to classify 
+The first image might be difficult to classify because there are many objects in the background.
+They might affect to the result of test.
 
 Here are the results of the prediction:
 
